@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            height: 0px;
+            width:0px;
+            margin: 0px;
+
+        }
+        body{
+            background-image: url(https://up.yimg.com/ib/th?id=OIP.c8HxJwrrHVimEm830aNRXAHaGl&pid=Api&rs=1&c=1&qlt=95&w=111&h=99);
+           background-size: cover;
+            background-position: center;
+            justify-content: center;
+            align-items: center;
+
+           
+           
+        }
+        .box{
+            height: 450px;
+            width: 400px;
+            border: 1px solid black;
+            background: transparent;
+            backdrop-filter: blur(15px);
+            border-radius: 10px;
+            margin-top: 160px;
+            margin-left: 15px;
+
+        }
+        h2{
+            color: silver;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 10px;
+           
+
+        }
+        .inputbox{
+            width: 100%;
+            position: relative;
+        }
+        .inputbox label{
+            position: absolute;
+            top:0px;
+            left:0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <form action="">
+        <h2>LOGIN</h2>
+        <div class="inputbox">
+        <input type="email" name="email">
+        <label for="email" class="label"></label>
+        </div>
+        <div class="inputbox">
+            <input type="password" name="password">
+            <label for="password" class="password"></label>
+            </div>
+        <div class="forgot">
+            <label for="">
+                <input type="checkbox">Remeber me
+            </label><label for="">
+                <a href="">forgot password</a>
+            </label> 
+            <button>
+                Login
+            </button>
+
+        </div>
+
+    </form>
+</body>
+</html>

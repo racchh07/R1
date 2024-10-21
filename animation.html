@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .continer{
+            height: 500px;
+            width:1000px;
+            border:2px solid purple;
+            border-radius: 2px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .linear{
+            height: 100px;
+            width:100px;
+            background-color: aqua;
+            margin-top: 10px;
+            border-radius: 2px;
+           transition-timing-function: linear;
+        }
+        .ease{
+            height: 100px;
+            width:100px;
+            background-color: aqua;
+            margin-top: 10px;
+            border-radius: 2px;
+            transition-timing-function: ease;
+        }
+        .ease in{
+            height: 100px;
+            width:100px;
+            background-color: aqua;
+            margin-top: 10px;
+            border-radius: 2px;
+           transition-timing-function: ease-in;
+        }
+        .ease out{
+            height: 100px;
+            width:100px;
+            background-color: aqua;
+            margin-top: 10px;
+            border-radius: 2px;
+           transition-timing-function: ease-out;
+        }
+        .ease in out{
+            height: 100px;
+            width:100px;
+            background-color: aqua;
+            margin-top: 10px;
+            border-radius: 2px;
+           transition-timing-function: ease-in-out;
+        }
+        continer:hover.box{
+            transform: translate(800px);
+
+            
+
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="continer">
+    <div class="linear"></div>
+    <div class="ease"></div>
+    
+    <div class="ease in"></div>
+    <div class="ease out"></div>
+    <div class="ease in out"></div>
+    
+    
+    </div>
+</body>
+</html>

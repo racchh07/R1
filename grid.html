@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 600px;
+            width: 800px;
+            border:3px solid magenta;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            
+        }
+        .box{
+           
+            border: 3px solid midnightblue;
+        }
+        .sapan{
+            grid-row: span;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="box">1st div</div>
+      <div class="box">2nd div</div>
+      <div class="box">3rd div</div>
+      <div class="box">4th div</div> 
+      <div class="sapan">5rd div</div>
+      <div class="box">6th div</div>   
+      <div class="box">7th div</div>   
+    </div>
+</body>
+</html>

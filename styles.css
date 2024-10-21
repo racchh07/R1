@@ -1,0 +1,45 @@
+.container{
+    height: 100vh;
+    background-image:url(https://tse2.mm.bing.net/th?id=OIP.JaqObzS04m18WKxltI4HxAHaEo&pid=Api&P=0&h=180);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+
+}
+.about{
+    background-image: url(https://tse4.mm.bing.net/th?id=OIP.TET_sxKOojhulGda9gSo5AAAAA&pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+h1{
+    justify-content: center;
+    text-align: center;
+    font-weight: 100;
+}
+.nav{
+    justify-content: space-around;
+    text-align: center;
+    
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;    
+}
+a{
+    text-decoration: none;
+}
+li:hover{
+    border-bottom: 1px solid black;
+}
+.heading{
+    text-align: center;
+    align-items: center;
+    color: maroon;
+}
+

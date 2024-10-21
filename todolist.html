@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: burlywood;
+           
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+           
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .todo{
+            width: 250px;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 100px;
+        }
+        .todo.h1{
+            color: whitesmoke;
+            text-align: center;
+            align-content: center;
+        }
+        input{
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .btn{
+            width: 90%;
+            background-color: burlywood;
+            height: 25px;
+            margin-left: 17px;
+            border-radius: 5px;
+        }
+        ul{
+            width: 100%;
+            position: relative;
+            left: -15px;
+
+        }
+        li{
+             width: 100%;
+            height: 40px;
+            list-style-type: none;
+            background-color: azure;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+        }
+        .del{
+            background-color: cornsilk;
+            margin: 3px;
+            border: none;
+        }
+        span{
+            text-align: center;
+            align-content: left;
+            align-items: left;;
+            color: rgb(66, 64, 61);
+            margin-left: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="todo">
+            <h1>TODO LIST</h1>
+            <input type="text" id="input" placeholder="type task">
+            <button class="btn" onclick="addtask()">Add Task</button>
+            <ul class="tklst">
+               
+            </ul>
+        </div>
+    </div>
+        <script>
+            function addtask(){
+                let input=document.getElementById('input');
+                let text=input.value.trim();
+                console.log(text);
+                if(text==""){
+                    return 'type smtg'
+
+                }
+                let ul=document.querySelector('ul')
+                let li=document.createElement('li')
+                li.innerHTML=` <span> ${text} </span>
+                    <button class="del" onclick="deletetodo(this)"><i class="fa-solid fa-trash"></i></button>`
+                    
+                    ul.appendChild(li);
+                    input.value=''
+                
+            }
+            function deletetodo(button){}
+
+        </script>
+       
+</body>
+</html>

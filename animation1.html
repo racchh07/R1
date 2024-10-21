@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .continer{
+            width: 1000px;
+            height: 800px;
+            border:2px solid rgb(67, 65, 65);
+            box-shadow: 30px 30px 30px rgb(130, 126, 126);
+            animation:img 5s ease infinite forwards ;
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+        @keyframes img{
+            0% {background-image:url("https://tse3.mm.bing.net/th?id=OIP.90RyD92IU5fJpxT8FAWwsgHaEK&pid=Api&P=0&h=180")}
+            25%{background-image: url(https://tse4.mm.bing.net/th?id=OIP.YBfCmGTKRjdm__8DF9-InQHaEK&pid=Api&P=0&h=180);}
+            50%{background-image: url("https://tse4.mm.bing.net/th?id=OIP._EEKZSx25f30biKf7TdtKQHaEK&pid=Api&P=0&h=180")}
+            75%{background-image: url("https://tse3.mm.bing.net/th?id=OIP.-r0x0ht6944PPomCRm6dYwHaE6&pid=Api&P=0&h=180")}
+
+        }
+        body{
+            display: grid;
+            place-items: center;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+    </style>
+</head> 
+<body>
+    <div class="continer"></div>
+</body>
+</html>
